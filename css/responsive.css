@@ -1,0 +1,270 @@
+@media screen and (min-width: 40rem) {
+  :root {
+    /* ========== Typography ========== */
+    --fs-1: 6rem;
+    --fs-4: 3.5rem;
+  }
+
+  /* ========== MODAL CART ========== */
+  .modal__cart {
+    width: 40%;
+  }
+
+  .letter__form {
+    max-width: 220px;
+  }
+
+  /* ========== MENU ========== */
+  .menu__group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .reviews__cards {
+    height: 630px;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  :root {
+    /* ========== Typography ========== */
+    --fs-1: 6.5rem;
+    --fs-2: 4.5rem;
+    --fs-3: 4.5rem;
+    --fs-5: 3.2rem;
+    --fs-7: 2.2rem;
+    --fs-15: 2rem;
+  }
+
+  /* ========== REUSABLE ========== */
+  .hero .container,
+  .about .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-1);
+    margin-inline: auto;
+    max-width: 960px;
+  }
+
+  .btn__group {
+    justify-content: initial;
+  }
+  /*=============== HERO ===============*/
+  .hero .container {
+    min-height: 100vh;
+  }
+
+  .hero {
+    text-align: inherit;
+  }
+
+  .hero__content {
+    max-width: 60rem;
+    padding-block-end: 0;
+  }
+
+  .title__accent {
+    justify-content: inherit;
+  }
+
+  .title__accent::before {
+    display: none;
+  }
+
+  .title__accent::after {
+    width: 10rem;
+  }
+
+  /* ========== INFO ========== */
+
+  .info__content {
+    flex-direction: initial;
+  }
+
+  .info__title {
+    font-family: var(--font-anton);
+    letter-spacing: 2px;
+    font-size: var(--fs-5);
+  }
+
+  .info__number {
+    top: -3rem;
+    left: -1rem;
+  }
+
+  /*=============== ABOUT ===============*/
+  .about .container {
+    gap: var(--gap-1);
+  }
+
+  /* ========== MENU DROPDOWN ========== */
+  .menu__dropdown {
+    width: 30%;
+  }
+
+  /* ============== MENU =============== */
+  .menu__item {
+    width: 350px;
+    height: 400px;
+  }
+
+  .utensil__icon {
+    font-size: 10rem;
+  }
+
+  /* ========== REVIEWS ========== */
+  .reviews__cards {
+    height: 500px;
+  }
+
+  .card__slot {
+    flex-direction: initial;
+    gap: var(--gap-5);
+  }
+
+  .customer__img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .customer__card {
+    width: 50%;
+    padding: 5rem;
+  }
+
+  .customer__name {
+    margin-left: 2rem;
+  }
+
+  /*=============== FOOTER ===============*/
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  :root {
+    /* ========== Typography ========== */
+    --fs-1: 7rem;
+    --fs-3: 5rem;
+    --fs-4: 3.8rem;
+    --fs-9: 1.7rem;
+  }
+  /* ========== REUSABLE ========== */
+  .hero .container,
+  .about .container,
+  .menu .container,
+  .reviews .container,
+  .footer .container {
+    margin-inline: auto;
+    max-width: 1140px;
+  }
+
+  /* ========== MODAL CART ========== */
+  .modal__cart {
+    width: 30%;
+  }
+
+  /*=============== HEADER ===============*/
+  .header__content {
+    grid-template-areas: "headerLogo headerBurger headerBag";
+  }
+
+  /*=============== NAV ===============*/
+  .burger__menu {
+    display: none;
+  }
+
+  .links__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-5);
+  }
+
+  .nav {
+    position: static;
+    justify-self: center;
+    width: auto;
+    min-height: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    transform: translate(0);
+  }
+
+  .nav__links {
+    flex-direction: row;
+    gap: var(--gap-5);
+    padding: 0;
+  }
+
+  .nav__link {
+    color: var(--primary-accent-color);
+  }
+
+  /* ========== MENU ========== */
+  .menu__group {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (min-width: 94rem) {
+  :root {
+    /* ========== Typography ========== */
+    --fs-1: 9rem;
+    --fs-3: 5.5rem;
+    --fs-10: 1.4rem;
+  }
+
+  /* ========== REUSABLE ========== */
+  .hero .container {
+    max-width: 1500px;
+  }
+
+  .about .container,
+  .reviews .container,
+  .footer .container {
+    max-width: 1400px;
+  }
+}
+
+@media screen and (min-width: 112rem) {
+  :root {
+    /* ========== Typography ========== */
+    --fs-1: 10rem;
+    --fs-3: 6rem;
+    --fs-8: 1.8rem;
+  }
+
+  /* ========== REUSABLE ========== */
+  .hero .container {
+    max-width: 2200px;
+  }
+
+  .about .container,
+  .reviews .container,
+  .footer .container {
+    max-width: 1800px;
+  }
+
+  .menu .container {
+    max-width: 1500px;
+  }
+
+  /* ========== MODAL CART ========== */
+  .modal__cart {
+    width: 20%;
+  }
+
+  /* ========== MENU ========== */
+  .menu__group {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .customer__card {
+    width: 40%;
+    padding: 5rem;
+  }
+}
