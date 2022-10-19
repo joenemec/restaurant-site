@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <!-- ========== FA ========== -->
+    <script
+      src="https://kit.fontawesome.com/07c53b717a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ========== JS ==========-->
+    <script defer src="./js/overlay.js"></script>
+    <script defer src="./js/items.js"></script>
+    <script defer src="./js/menu.js"></script>
+    <script defer src="./js/index.js"></script>
+    <title>Phó Real | Welcome</title>
+  </head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="container">
+        <div class="header__content flex__between">
+          <h2 class="logo">Phó Real</h2>
+          <div class="burger__menu">
+            <span class="line first"></span>
+            <span class="line second"></span>
+          </div>
+          <!-- ========== NAV ========== -->
+          <nav class="nav">
+            <ul class="nav__links">
+              <li class="nav__item">
+                <a class="nav__link" href="#home">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#menu">Menu</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#reviews">Reviews</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ========== CART MODAL ========== -->
+          <div class="modal__cart">
+            <div class="cart__content">
+              <h3 class="cart__title">Your Order</h3>
+              <div class="cart__info">
+                <h4 class="cart__food-item">Item</h4>
+                <h4 class="cart__food-amount">Subtotal</h4>
+              </div>
+              <!-- Render cart items here -->
+              <div class="cart__items"></div>
+              <div class="cart__total">
+                <h5 class="cart__total-text">Total (0 items):</h5>
+              </div>
+              <button class="cart__btn complete__btn">Complete Order</button>
+            </div>
+          </div>
+          <!-- ========== CART ========== -->
+          <div class="shopping__cart">
+            <ion-icon
+              class="cart__close"
+              name="close-circle-outline"
+            ></ion-icon>
+            <ion-icon class="cart hide__cart" name="bag-outline"></ion-icon>
+            <p class="cart__amount hide__cart">0</p>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+      <!-- ========== HERO ========== -->
+      <section class="hero section" id="home" aria-label="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="title hero__title">
+              Feel the Joy of Mouthwatering
+              <span class="title__accent">Food</span>
+            </h1>
+            <p class="text hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+            <div class="btn__group">
+              <button class="btn__primary order__btn">Order Now</button>
+            </div>
+          </div>
+          <figure class="hero__banner flex__center">
+            <img
+              class="img__cover hero__cover"
+              src="./images/hero-img.svg"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="container section section--hidden">
+          <div class="info__content">
+            <div class="info__column info__column-one">
+              <h2 class="info__number">01</h2>
+              <h3 class="info__title">Itaque earum rerum hic tenetur</h3>
+              <p class="info__text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati.
+              </p>
+            </div>
+            <div class="info__column info__column-two">
+              <h2 class="info__number">02</h2>
+              <h3 class="info__title">Itaque earum rerum hic tenetur</h3>
+              <p class="info__text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati.
+              </p>
+            </div>
+            <div class="info__column info__column-three">
+              <h2 class="info__number">03</h2>
+              <h3 class="info__title">Itaque earum rerum hic tenetur</h3>
+              <p class="info__text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section class="about" id="about">
+        <div class="container section section--hidden">
+          <figure class="about__banner flex__center">
+            <img
+              class="img__cover about__cover"
+              src="./images/about-img.svg"
+              alt=""
+            />
+          </figure>
+          <div class="about__content">
+            <h2 class="title about__title">
+              Where every ingredient tells a story.
+            </h2>
+
+            <p class="text about__text">
+              Aliquam sit amet feugiat purus. Donec nisi metus, lobortis a
+              libero sagittis, egestas ultrices neque. Fusce nulla ex, sagittis
+              ac turpis at, molestie rutrum ex. Cras eleifend velit ante, et
+              mollis urna imperdiet nec. Donec justo magna, porta ut felis id,
+              varius commodo leo.
+            </p>
+            <p class="text about__text">
+              Aliquam sollicitudin pellentesque ex, quis efficitur nisi semper
+              ut. Duis ultrices feugiat lectus. Ut mi nisl, aliquam eu sem vel,
+              gravida finibus lacus. Nullam ullamcorper nisl id nisl suscipit
+              feugiat.
+            </p>
+
+            <ul class="about__list">
+              <li class="list__item">
+                Itaque earum rerum hic tenetur a sapiente delectus.
+              </li>
+              <li class="list__item">
+                Itaque earum rerum hic tenetur a sapiente delectus.
+              </li>
+              <li class="list__item">
+                Itaque earum rerum hic tenetur a sapiente delectus.
+              </li>
+            </ul>
+            <div class="btn__group">
+              <a href="#">
+                <button class="btn__primary">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== MENU ========== -->
+      <section class="menu" id="menu">
+        <div class="container section section--hidden">
+          <div class="menu__content">
+            <h2 class="title menu__title">Explore our Menu</h2>
+            <!-- ========== MENU DROPDOWN ========== -->
+            <div class="menu__dropdown">
+              <div class="dropdown__select flex__between">
+                <span class="selected"></span>
+                <div class="chevron flex__center">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+              </div>
+              <ul class="menu__options">
+                <!-- Append menu sections here -->
+              </ul>
+            </div>
+            <!-- ========== MENU ITEMS ========== -->
+            <section class="menu__group"></section>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== REVIEWS ========== -->
+      <section class="reviews" id="reviews">
+        <div class="container section section--hidden">
+          <div class="reviews__content">
+            <h2 class="title reviews__title">
+              Our Customer <span class="title__span">Reviews</span>
+            </h2>
+            <p class="text reviews__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+
+            <div class="reviews__cards flex__center">
+              <div class="card__slot flex__center">
+                <div class="customer__card bg-one">
+                  <div class="customer">
+                    <figure>
+                      <img
+                        class="customer__img"
+                        src="./images/review1-img.svg"
+                        alt="customer image"
+                      />
+                    </figure>
+                    <h4 class="customer__name">John Doe</h4>
+                  </div>
+                  <div class="customer__review">
+                    <blockquote class="customer__text">
+                      “Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia.”
+                    </blockquote>
+
+                    <div class="icons">
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="customer__card bg-two">
+                  <div class="customer">
+                    <figure>
+                      <img
+                        class="customer__img"
+                        src="./images/review2-img.svg"
+                        alt="customer image"
+                      />
+                    </figure>
+                    <h4 class="customer__name">Jane Doe</h4>
+                  </div>
+                  <div class="customer__review">
+                    <blockquote class="customer__text">
+                      “Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia.”
+                    </blockquote>
+                    <div class="icons">
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__slot flex__center">
+                <div class="customer__card bg-two">
+                  <div class="customer">
+                    <figure>
+                      <img
+                        class="customer__img"
+                        src="./images/review3-img.svg"
+                        alt="customer image"
+                      />
+                    </figure>
+                    <h4 class="customer__name">John Doe</h4>
+                  </div>
+                  <div class="customer__review">
+                    <blockquote class="customer__text">
+                      “Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia.”
+                    </blockquote>
+                    <div class="icons">
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="customer__card bg-one">
+                  <div class="customer">
+                    <figure>
+                      <img
+                        class="customer__img"
+                        src="./images/review4-img.svg"
+                        alt="customer image"
+                      />
+                    </figure>
+                    <h4 class="customer__name">Jane Doe</h4>
+                  </div>
+                  <div class="customer__review">
+                    <blockquote class="customer__text">
+                      “Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia.”
+                    </blockquote>
+                    <div class="icons">
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__slot flex__center">
+                <div class="customer__card bg-two">
+                  <div class="customer">
+                    <figure>
+                      <img
+                        class="customer__img"
+                        src="./images/review5-img.svg"
+                        alt="customer image"
+                      />
+                    </figure>
+                    <h4 class="customer__name">Jane Doe</h4>
+                  </div>
+                  <div class="customer__review">
+                    <blockquote class="customer__text">
+                      “Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia.”
+                    </blockquote>
+                    <div class="icons">
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="customer__card bg-one">
+                  <div class="customer">
+                    <figure>
+                      <img
+                        class="customer__img"
+                        src="./images/review6-img.svg"
+                        alt="customer image"
+                      />
+                    </figure>
+                    <h4 class="customer__name">John Doe</h4>
+                  </div>
+                  <div class="customer__review">
+                    <blockquote class="customer__text">
+                      “Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia.”
+                    </blockquote>
+                    <div class="icons">
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                      <ion-icon class="star__icon" name="star"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__buttons flex__center">
+              <button class="arrow__slide arrow__slide-left flex__center">
+                <ion-icon
+                  class="arrow__icon"
+                  name="caret-back-circle-outline"
+                ></ion-icon>
+              </button>
+              <div class="dots flex__center"></div>
+              <button class="arrow__slide arrow__slide-right flex__center">
+                <ion-icon
+                  class="arrow__icon"
+                  name="caret-forward-circle-outline"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__column">
+            <h3 class="footer__title">Our Hours</h3>
+            <h4 class="footer__text footer__text-header">Regular</h4>
+            <p class="footer__text">Monday-Saturday: 11:00 AM - 9:00 PM</p>
+            <p class="footer__text">Sunday: Closed</p>
+            <h4 class="footer__text footer__text-header">Happy</h4>
+            <p class="footer__text">Thursday-Saturday: 2:00 PM - 6:00 PM</p>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Contact Us</h3>
+            <p class="footer__text footer__info">
+              <ion-icon name="location"></ion-icon>
+              16 East Ct Babylon Village, ND 11702
+            </p>
+            <p class="footer__text footer__info">
+              <ion-icon name="call"></ion-icon> (631) 482-1465
+            </p>
+            <p class="footer__text footer__info">
+              <ion-icon name="mail"></ion-icon>phóreal@gmail.com
+            </p>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Newsletter</h3>
+            <p class="footer__text">
+              Sign up to receive exclusive information.
+            </p>
+            <form action="" class="letter__form">
+              <input
+                class="email__input"
+                type="email"
+                name="email_address"
+                placeholder="Enter your email"
+                required
+              />
+              <button type="submit" class="btn__form">
+                <ion-icon
+                  name="paper-plane"
+                  class="plane__icon"
+                  aria-label="Send Icon"
+                ></ion-icon>
+              </button>
+            </form>
+            <div class="footer__icons">
+              <a href="#" class="social__icon">
+                <ion-icon
+                  name="logo-twitter"
+                  aria-label="Link to Twitter"
+                ></ion-icon>
+              </a>
+              <a href="#" class="social__icon">
+                <ion-icon
+                  name="logo-instagram"
+                  aria-label="Link to Instagram"
+                ></ion-icon>
+              </a>
+              <a href="#" class="social__icon">
+                <ion-icon
+                  name="logo-facebook"
+                  aria-label="Link to Facebook"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ========== ION ICON ========== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
